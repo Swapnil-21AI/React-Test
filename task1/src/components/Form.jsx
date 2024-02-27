@@ -3,7 +3,7 @@ import './Form.css'
 
 export default function Form() {
     return(
-        <div className='form '>
+        <div className='container-fluid'>
             <h1>Contact Form</h1>
                 <label class="form-label">First Name: </label>
                 <input type="text" name="" id="" className='form-control'placeholder='John' required/>
@@ -18,9 +18,11 @@ export default function Form() {
                 <input type="email" name="" id=""  className='form-control'/>
 
                 <label class="form-label">Gender: </label>
-                <input type="radio" name="gender" id="" />Male
-                <input type="radio" name="gender" id="" />Female
-                
+                <input type="radio" name="gender" id="" className='form-check-input'/><label className='form-check-label'>Male</label>
+                <div class="form-check">
+                    <input type="radio" name="gender" id=""  className='form-check-input'/>
+                    <label className='form-check-label'>Female</label>
+                </div>
                 <label class="form-label">Gender: </label>
                 <textarea name="address" id="" ></textarea>
                 <button type="submit">Submit</button>
